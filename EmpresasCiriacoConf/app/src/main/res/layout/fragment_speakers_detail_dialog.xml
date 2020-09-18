@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Toolbar
+            android:id="@+id/toolbarSpeakerConference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/cardCornerRadiusSpeakerDetailDialog"
+                app:cardElevation="@dimen/cardElevationSpeakerDetailDialog"
+                android:layout_marginTop="@dimen/marginCardViewSpeakerDetailDialog"
+                android:layout_marginLeft="@dimen/marginCardViewSpeakerDetailDialog"
+                android:layout_marginRight="@dimen/marginCardViewSpeakerDetailDialog"
+                android:layout_marginBottom="@dimen/marginCardViewSpeakerDetailDialog">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/marginBottomLLSpeakerDetailDialog"
+                    android:background="@drawable/shape_parrafo_speaker_detail_dialog"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivDetailSpeakerImage"
+                        android:layout_width="@dimen/ivWidthSpeakerDetailDialog"
+                        android:layout_height="@dimen/ivHeightSpeakerDetailDialog"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/ivMarginTopSpeakerDetailDialog"/>
+                    <TextView
+                        android:id="@+id/tvDetailSpeakerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Speaker Name"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/tvMarginTopSpeakerDetailDialog"
+                        android:textSize="@dimen/tvTamanioNameSpeakerDetailDialog"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginRight="@dimen/marginRightSpeakerDetailDialog"
+                        android:layout_marginLeft="@dimen/marginLeftSpeakerDetailDialog"/>
+                    <TextView
+                        android:id="@+id/tvDetailSpeakerJobtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Job title"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/tamanioJobtitleSpeakerDetailDialog"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginRight="@dimen/marginRightSpeakerDetailDialog"
+                        android:layout_marginLeft="@dimen/marginLeftSpeakerDetailDialog"/>
+                    <TextView
+                        android:id="@+id/tvDetailSpeakerWorkplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Workplace"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/tvWorkplaceSpeakerDetailDialog"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginRight="@dimen/marginRightSpeakerDetailDialog"
+                        android:layout_marginLeft="@dimen/marginLeftSpeakerDetailDialog"/>
+                    <ImageView
+                        android:id="@+id/ivDetailSpeakerTwitter"
+                        android:layout_width="@dimen/ivTwitterWidthSpeakerDetailDialog"
+                        android:layout_height="@dimen/ivTwitterHeightSpeakerDetailDialog"
+                        android:src="@drawable/ic_icons_twitter"
+                        android:layout_marginTop="@dimen/ivMarginTopTwitterSpeakerDetailDialog"
+                        android:layout_gravity="center_horizontal"/>
+                    <TextView
+                        android:id="@+id/tvDetailSpeakerBiography"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum"
+                        android:gravity="left"
+                        android:textSize="@dimen/tamanioBiographySpeakerDetailDialog"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginRight="@dimen/marginBiographySpeakerDetailDialog"
+                        android:layout_marginLeft="@dimen/marginBiographySpeakerDetailDialog"
+                        android:layout_marginTop="@dimen/marginBiographySpeakerDetailDialog"
+                        android:layout_marginBottom="@dimen/marginBiographySpeakerDetailDialog"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

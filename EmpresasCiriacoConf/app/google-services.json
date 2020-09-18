@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "919433349646",
+    "firebase_url": "https://ciriacoconf.firebaseio.com",
+    "project_id": "ciriacoconf",
+    "storage_bucket": "ciriacoconf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919433349646:android:d992a47143f97a712e0a5f",
+        "android_client_info": {
+          "package_name": "com.example.appciriacoconf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919433349646-hf1vmbr1p26g4guvp27r9gal30e8hvu2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appciriacoconf",
+            "certificate_hash": "05edb14f1d63b45ab77cdc52e067cd509a7ea07a"
+          }
+        },
+        {
+          "client_id": "919433349646-kf859o0vk10p5ok5m8qpbfrrcv3da8g4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuIcnWPOfjSObqCY7E9tYDvBuIbcYcRg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919433349646-kf859o0vk10p5ok5m8qpbfrrcv3da8g4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
